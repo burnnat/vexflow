@@ -331,7 +331,7 @@ Vex.Flow.Formatter = (function() {
           Vex.Flow.TickContext,
           function(tickable, context) { context.addTickable(tickable); });
 
-      this.totalTicks = voices[0].getTicksUsed().clone();
+      this.totalTicks = voices[0].getTotalTicks().clone();
       this.tContexts = contexts;
       return contexts;
     },
