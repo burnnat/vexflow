@@ -398,7 +398,7 @@ Vex.Flow.Formatter = (function() {
         context.tContexts = contexts.array;
       });
 
-      this.totalTicks = voices[0].getTicksUsed().clone();
+      this.totalTicks = voices[0].getTotalTicks().clone();
       this.tContexts = contexts;
       return contexts;
     },
